@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.Scanner;
+public class Main{
+    public static void main (String[] args) {
+        int number1;
+        int number2;
+        int result;
+        Scanner input=new Scanner(System.in);
+        number1=input.nextInt();
+        number2=input.nextInt();
+        result=number1+number2;
+        System.out.println("The sum of two number is : "+result);
+    }
+}
+
+
+/* Or we can directly use the easy way also, by assigning directly..
+import java.io.*;
+import java.util.Scanner;
+public class Main{
+    public static void main (String[] args) {
+        int number1=15;
+        int number2=20;
+        int result=number1+number2;
+        System.out.println("The sum of two number is : "+result);
+    }
+}
+*/
