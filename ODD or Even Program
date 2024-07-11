@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.Scanner;                              //importing header files to the program... 
+
+public class Main{                                      //Main method
+    public static void main (String[] args) {
+        int number;
+        Scanner input=new Scanner(System.in);
+        number=input.nextInt();
+        if(number%2==0){
+            System.out.printf("The number %d is even. \n",number);  
+        }
+        else{
+            System.out.printf("The number %d is odd. \n", number);
+        }
+    }
+}
