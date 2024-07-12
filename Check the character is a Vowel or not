@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    char c;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter a character: ");
+        c=input.next().charAt(0);
+        boolean isVowel=false;
+        switch(c){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                isVowel=true;
+        }
+        if(isVowel){
+            System.out.println("The given character is a vowel: "+c);
+        }
+        else{
+            System.out.println("The given character is not a vowel: "+c);
+        }
+	}
+}
