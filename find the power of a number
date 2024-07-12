@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int num, power, initialvalue;
+	    Scanner input=new Scanner(System.in);
+	    System.out.println("Enter the number: ");
+	    num=input.nextInt();
+	    initialvalue=num;
+	    System.out.println("Enter the power: ");
+	    power=input.nextInt();
+	    for(int i=1;i<power;i++){
+            num=initialvalue*num;
+	    }
+	    System.out.print(num);
+	}
+}
